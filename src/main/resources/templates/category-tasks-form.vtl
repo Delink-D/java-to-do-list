@@ -1,0 +1,13 @@
+<div class="box">
+	<form action="/tasks" method="post" id="new-task">
+	 	<h3>TO-DO-LIST</h3>
+		<div class="form-group">
+			<label for="desc">Description</label>
+			<textarea id="desc" name="description" class="form-control" placeholder="Enter the taask description here..."></textarea>
+			<input name="categoryId" type="hidden" value="$category.catId()">
+		</div>
+		<div class="form-group">
+			<input type="submit" name="" class="btn btn-primary" value="Add Task">
+		</div>
+	</form>
+</div>

@@ -1,0 +1,15 @@
+<div class="box">
+	#if($cat)
+		<h3>Category Name <small>$cat.getCategory()</small></h3>
+		<p>
+			<a href="/categories/$cat.catId()/tasks/newtask" class="btn btn-sm btn-info">New task for $cat.getCategory()</a>
+			<a href="/categories" class="btn btn-sm btn-success">Go to all categories</a>
+		</p>
+		#foreach($task in $cat.getTasks())
+			<p class="task">$task.getDescription()</p>
+		#end
+	#else
+		<h4 class="alert alert-danger">OOPS! That Category is no more. Go back and choose anoher one</h4>
+	#end
+
+</div>

@@ -1,0 +1,16 @@
+<div class="box">
+	<h3>My To Do List Categories</h3>
+	#if($cats)
+		#foreach($cat in $cats)
+			<a href="categories/$cat.catId()">
+				<p class="task">$cat.getCategory()</p>
+			</a>
+		#end
+	#else
+		<p class="task">No Categories yet</p>
+	#end
+
+	<div>
+		<a href="/categories/new-cat" class="btn btn-sm btn-info">Add A New Category!</a>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="box">
+	<h3>My To Do List</h3>
+	#if($tasks)
+		#foreach($task in $tasks)
+			<a href="tasks/$task.getTaskId()">
+				<p class="task">$task.getDescription()</p>
+			</a>
+		#end
+	#else
+		<p class="task">No Tasks yet</p>
+	#end
+</div>

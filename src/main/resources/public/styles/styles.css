@@ -1,0 +1,61 @@
+body {
+	background: #e2e2e2;
+}
+
+.box {
+	width: 60%;
+	margin: 2% auto;
+	background: #fff;
+	padding: 15px;
+	border: 1px solid #dcdcdc;
+}
+
+.task {
+	background: #f9f9f9;
+	padding: 10px 15px;
+	font-size: 1.5em;
+	font-weight: 800;
+	cursor: pointer;
+}
+#new-task {
+	width: 60%;
+}
+
+/*navigation*/
+.my-nav {
+	list-style: none;
+	background: #333;
+	margin: 1% auto;
+	width: 60%;
+}
+.my-nav li {
+	padding: 7px 20px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+}
+.my-nav li:not(:last-child) {
+	border-right: 1px solid #fff;
+}
+.my-nav li a {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.box-index {
+	width: 90%;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #e2e2e2;
+	margin: 0 auto;
+    border-radius: 7px;
+}
+.box-index > h3 {
+	color: #89B152;
+}
+.box-index > a {
+	margin-right: 5%;
+	min-width: 200px;
+	margin-top: 6%;
+}
